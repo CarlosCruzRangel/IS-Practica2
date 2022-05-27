@@ -32,33 +32,35 @@
           </span>
         </div>
       </div>
-      <noteList class="bordemain">
-        <div id="listed"></div>
-      </noteList>
-
-      <!-- prueba note pad -->
-      <notepad>
-        <div id="main">
-          <div id="wrapper">
-            <div id="text-static">
-              <div class="form-line" id="note-title">
-                <input id="title-field" type="text" placeholder="Titulo" />
+      <div id="wrappermain">
+        <noteList class="bordemain">
+          <div id="listed"></div>
+        </noteList>
+        <!-- prueba note pad -->
+        <notepad>
+          <div id="main">
+            <div id="wrapper">
+              <div id="text-static">
+                <div class="form-line" id="note-title">
+                  <input id="title-field" type="text" placeholder="Titulo" />
+                </div>
+                <div id="note-body">
+                  <textarea id="body-field" placeholder="Escribir aqui"></textarea>
+                </div>
               </div>
-              <div id="note-body">
-                <textarea id="body-field" placeholder="Escribir aqui"></textarea>
+              <div id="text-json">
+                <button id="btn-general">Cambiar color</button>
+                <button id="btn-general">Cambiar color</button>
+                <button id="btn-general">Limpiar texto</button>
+                <button id="btn-general">Guardar</button>
               </div>
-            </div>
-            <div id="text-json">
-              <button id="btn-general">Cambiar color</button>
-              <button id="btn-general">Cambiar color</button>
-              <button id="btn-general">Limpiar texto</button>
-              <button id="btn-general">Guardar</button>
             </div>
           </div>
-        </div>
-      </notepad>
-      <!-- fin prueba note pad -->
+        </notepad>
+        <!-- fin prueba note pad -->
+      </div>
     </main>
+
     <footer>
       <button id="btn-save">Guardar</button>
       <button id="btn-delete">Eliminar / Borrar</button>
