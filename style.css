@@ -1,0 +1,272 @@
+header {
+  text-align: left;
+  font-weight: 800;
+  font-size: 28px;
+  border-bottom: solid 3px #dedede;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fondoApp {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 180, 103));
+}
+
+footer {
+  display: flex;
+  flex-flow: row-reverse;
+  padding: 5px 20px;
+}
+
+.headers {
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-size: 20px;
+}
+
+#list-head {
+  margin-left: 2.5%;
+  display: inline-block; /*inline-block */
+  text-align: center;
+}
+
+#note-head {
+  width: 60%;
+  margin-left: 5%;
+  display: inline;
+  text-align: center;
+}
+
+noteList {
+  margin-top: 20px;
+  display: inline-block;
+  margin-left: 2.5%;
+  width: 15%;
+  height: 500px;
+  overflow: scroll;
+  border: solid 3px #929292;
+  border-radius: 5px;
+  background-color: #dedede;
+}
+
+.within-list {
+  cursor: pointer;
+}
+
+.list-title {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px 5px 0 5px;
+}
+
+.list-date {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 12px;
+  padding: 0 5px 0 5px;
+}
+
+.list-text {
+  padding: 0 5px 5px 5px;
+  border-bottom: solid 1px black;
+}
+
+notePad {
+  display: inline-block;
+  border: solid 3px black;
+  border-radius: 60px;
+  height: 430px;
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 0;
+  background-color: #41a0e8;
+}
+
+#note-title {
+  font-size: 40px;
+  padding: 0 0 5px 5px;
+  width: 100%;
+}
+
+#note-body {
+  margin-top: 20px;
+}
+
+#body-field,
+#title-field {
+  width: 50%;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+  border: solid 3px black;
+}
+
+#title-field {
+  font-size: 30px;
+  font-weight: 600;
+  width: 100%;
+}
+
+#body-field {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  height: 300px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+#color-select {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  padding: 5px 10px 0 0;
+}
+
+.color-box {
+  border: solid 2px #929292;
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+}
+
+.display {
+  display: visible;
+}
+
+.no-display {
+  display: none;
+}
+
+button {
+  margin: 5px;
+  border: solid 3px grey;
+  border-radius: 10%;
+  font-size: 22px;
+  font-weight: 800;
+  color: #dedede;
+}
+
+button:hover,
+.color-box:hover {
+  cursor: pointer;
+}
+
+#listed:nth-child(odd):hover {
+  cursor: pointer;
+}
+
+#btn-save {
+  background-color: #2f5032;
+}
+
+#btn-general {
+  background-color: #ccfc99;
+  color: black;
+}
+
+#btn-delete {
+  background-color: #e41a36;
+}
+
+.white {
+  background-color: white;
+}
+
+.orange {
+  background-color: #ffd37f;
+}
+
+.banana {
+  background-color: #fffa81;
+}
+
+.honeydew {
+  background-color: #d5fa80;
+}
+
+.flora {
+  background-color: #78f87f;
+}
+
+.aqua {
+  background-color: #79fbd6;
+}
+
+.ice {
+  background-color: #79fdfe;
+}
+
+.sky {
+  background-color: #7ad6fd;
+}
+
+.orchid {
+  background-color: #7b84fc;
+}
+
+.lavendar {
+  background-color: #d687fc;
+}
+
+.pink {
+  background-color: #ff89fd;
+}
+
+.form-line {
+  display: flex;
+}
+
+/* nuevos */
+.bordemain {
+  padding: 20px;
+  border: 1px solid tomato;
+}
+
+#main {
+  /*Styles for sample presentation*/
+  padding: 20px;
+  border: 1px solid tomato;
+}
+
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  /* The remaining place (horizontaly) will be spread out around divs in wrapper. */
+  justify-content: space-around;
+
+  /*Styles for sample presentation*/
+  border: 1px solid royalblue;
+}
+
+#wrapper > header {
+  /* To keep header 100% width. */
+  flex: 0 0 100%;
+  text-align: center;
+
+  /*Styles for sample presentation*/
+  background-color: sandybrown;
+}
+
+#wrapper > div {
+  margin: 10px;
+  padding: 5px;
+  /* To center the text vertically. */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  /*Styles for sample presentation*/
+  border: 1px solid maroon;
+  text-align: justify;
+}
+
+#text-static {
+  /*Low flex basis values to keep it next to each other divs*/
+  flex: 1 0 30%;
+}
+
+#wrapper > div#text-json {
+  /*Low flex basis values to keep it next to each other divs*/
+  flex: 0 0 25%;
+  margin-left: 0;
+}

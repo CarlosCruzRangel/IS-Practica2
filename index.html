@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NOTAS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="fondoApp">
+    <header>
+      Bienvenido a NOTAS v1.0
+      <div id="color-select">
+        <div class="color-box white"></div>
+        <div class="color-box orange"></div>
+        <div class="color-box banana"></div>
+        <div class="color-box honeydew"></div>
+        <div class="color-box flora"></div>
+        <div class="color-box aqua"></div>
+        <div class="color-box ice"></div>
+        <div class="color-box sky"></div>
+        <div class="color-box orchid"></div>
+        <div class="color-box lavendar"></div>
+        <div class="color-box pink"></div>
+      </div>
+    </header>
+    <main>
+      <div class="headers">
+        <div id="list-head" class="bordemain"><b>Tus notas</b> <i>(Haga clic para editar/eliminar)</i></div>
+        <div id="note-head" class="bordemain">
+          <b>Tu bloc de notas</b>
+          <span id="edit-mode" class="no-display">
+            <i> (edit mode) </i>
+          </span>
+        </div>
+      </div>
+      <noteList class="bordemain">
+        <div id="listed"></div>
+      </noteList>
+
+      <!-- prueba note pad -->
+      <notepad>
+        <div id="main">
+          <div id="wrapper">
+            <div id="text-static">
+              <div class="form-line" id="note-title">
+                <input id="title-field" type="text" placeholder="Titulo" />
+              </div>
+              <div id="note-body">
+                <textarea id="body-field" placeholder="Escribir aqui"></textarea>
+              </div>
+            </div>
+            <div id="text-json">
+              <button id="btn-general">Cambiar color</button>
+              <button id="btn-general">Cambiar color</button>
+              <button id="btn-general">Limpiar texto</button>
+              <button id="btn-general">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </notepad>
+      <!-- fin prueba note pad -->
+    </main>
+    <footer>
+      <button id="btn-save">Guardar</button>
+      <button id="btn-delete">Eliminar / Borrar</button>
+    </footer>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</html>
