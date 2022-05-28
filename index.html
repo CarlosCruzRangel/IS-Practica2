@@ -28,9 +28,7 @@
           <div id="main">
             <div id="wrapper">
               <div id="text-static">
-                <div class="form-line" id="note-title">
-                  <input id="title-field" type="text" placeholder="Titulo" />
-                </div>
+                <div class="form-line" id="note-title"><input id="title-field" type="text" placeholder="Titulo" /></div>
                 <div id="note-body">
                   <textarea id="body-field" placeholder="Escribir aqui"></textarea>
                 </div>
@@ -105,17 +103,26 @@
         <!-- fin prueba note pad -->
         <!-- vista note pad -->
         <notepad>
-          <div id="main2">
+          <div>
             <div id="wrapper2">
               <div id="text-static2">
                 <div class="form-line" id="note-title2">
-                  <input readonly id="title-field2" type="text" />
+                  <h1 id="title-field2">Aqui deberia ir el titulo</h1>
                 </div>
-                <div id="note-body2">
-                  <textarea readonly id="body-field2"></textarea>
+                <div>
+                  <h1 readonly id="body-field2">Aqui deberia ir la nota</h1>
                 </div>
               </div>
             </div>
+            <script>
+              var element = document.createElement('title-field').value;
+              document.getElementById('title-field2').innerHTML = element;
+            </script>
+            <script>
+              var element2 = document.createElement('body-field').value;
+              document.getElementById('body-field2').innerHTML = element2;
+            </script>
+            <br />
           </div>
         </notepad>
         <!-- vista note pad -->
@@ -123,7 +130,7 @@
     </main>
 
     <footer>
-      <button id="btn-nuevo">Nueva nota</button>
+      <button id="btn-nuevo"><i class="fa-solid fa-circle-plus"></i> Nueva nota</button>
     </footer>
   </body>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
