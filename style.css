@@ -132,8 +132,8 @@ notePad {
   border: none;
   outline: none;
   resize: none;
+  margin-left: -2px;
   border-radius: 5px;
-  border: solid 3px black;
 }
 
 #title-field2 {
@@ -144,7 +144,6 @@ notePad {
 
 #body-field2 {
   font-size: 30px;
-  text-align: center;
   font-weight: 500;
   height: 300px;
   width: 100%;
@@ -291,13 +290,13 @@ button:hover,
 /* nuevos */
 .bordemain {
   padding: 20px;
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
 }
 
 #main {
   /*Styles for sample presentation*/
   padding: 20px;
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
 }
 
 #main2 {
@@ -313,7 +312,7 @@ button:hover,
   justify-content: space-around;
 
   /*Styles for sample presentation*/
-  border: 1px solid royalblue;
+  /* border: 1px solid royalblue; */
 }
 
 #wrapper > header {
@@ -334,7 +333,7 @@ button:hover,
   justify-content: center;
 
   /*Styles for sample presentation*/
-  border: 1px solid maroon;
+  /* border: 1px solid maroon; */
   text-align: justify;
 }
 
@@ -345,7 +344,7 @@ button:hover,
   justify-content: space-around;
 
   /*Styles for sample presentation*/
-  border: 1px solid royalblue;
+  /* border: 1px solid royalblue; */
 }
 
 #wrapper2 > header {
@@ -366,7 +365,7 @@ button:hover,
   justify-content: center;
 
   /*Styles for sample presentation*/
-  border: 1px solid maroon;
+  /* border: 1px solid maroon; */
   text-align: justify;
 }
 
@@ -394,7 +393,7 @@ button:hover,
   justify-content: space-around;
 
   /*Styles for sample presentation*/
-  border: 1px solid royalblue;
+  /* border: 1px solid royalblue; */
 }
 
 /* modal para colores titulo */
