@@ -72,7 +72,7 @@ noteList {
 
 notePad {
   display: inline-block;
-  border: solid 3px black;
+  box-shadow: 6px 5px 5px rgb(122, 122, 122);
   border-radius: 60px;
   height: 10%;
   width: 35%;
